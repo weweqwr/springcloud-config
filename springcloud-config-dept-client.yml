@@ -36,8 +36,8 @@ info:
   app:
     name: springcloud-provider-dept-8001
   build:
-    artifactId: @project.artifactId@
-    version: @project.version@ 
+    artifactId: $project.artifactId$
+    version: $project.version$ 
   companny:
     name: www.atguigu.com
 ---
@@ -74,8 +74,8 @@ info:
   app:
     name: springcloud-provider-dept-8001
   build:
-    artifactId: @project.artifactId@
-    version: @project.version@ 
+    artifactId: $project.artifactId$
+    version: $project.version$ 
   companny:
     name: www.atguigu.com
 ---
