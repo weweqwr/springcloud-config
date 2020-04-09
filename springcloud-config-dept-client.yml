@@ -78,4 +78,3 @@ info:
     version: $project.version$ 
   companny:
     name: www.atguigu.com
----
