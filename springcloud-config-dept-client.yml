@@ -31,7 +31,7 @@ eureka:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   config-location: classpath:mybatis/mybatis.cig.xml
-  type-aliases-package: com.longer.springcloud.entity
+  type-aliases-package: com.longer.entities
 info:
   app:
     name: springcloud-provider-dept-8001
@@ -69,7 +69,7 @@ eureka:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   config-location: classpath:mybatis/mybatis.cig.xml
-  type-aliases-package: com.longer.springcloud.entity
+  type-aliases-package: com.longer.entities
 info:
   app:
     name: springcloud-provider-dept-8001
