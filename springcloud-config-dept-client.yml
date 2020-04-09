@@ -10,7 +10,7 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cig.xml        # mybatis配置文件所在路径
   type-aliases-package: com.longer.entities    # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mapper/*.xml                       # mapper映射文件
+  - classpath: mapper/*.xml                       # mapper映射文件
     
 spring: 
    profiles: dev
@@ -51,7 +51,7 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cig.xml        # mybatis配置文件所在路径
   type-aliases-package: com.longer.entities    # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mapper/*.xml                       # mapper映射文件
+  - classpath: mapper/*.xml                       # mapper映射文件
     
 spring: 
    profiles: test
