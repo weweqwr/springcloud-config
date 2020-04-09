@@ -7,15 +7,15 @@ server:
   port: 8001
   
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+  config-location: classpath:mybatis/mybatis.cig.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.longer.springcloud.entities    # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  - classpath:mapper/*.xml                       # mapper映射文件
     
 spring: 
    profiles: dev
    application:
-    name: microservicecloud-dept 
+    name: springcloud-dept 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -34,11 +34,11 @@ eureka:
       #defaultZone: http://localhost:7001/eureka
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/      
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: springcloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址     
  
 info: 
-  app.name: atguigu-microservicecloud
+  app.name: springcloud-dept
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -48,15 +48,15 @@ server:
   port: 8001
   
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+  config-location: classpath:mybatis/mybatis.cig.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.longer.springcloud.entities    # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  - classpath:mapper/*.xml                       # mapper映射文件
     
 spring: 
    profiles: test
    application:
-    name: microservicecloud-dept 
+    name: springcloud-dept 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -75,7 +75,7 @@ eureka:
       #defaultZone: http://localhost:7001/eureka
        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/      
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: springcloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址     
  
 info: 
