@@ -3,21 +3,6 @@
     active: 
     - dev
 ---
-eureka:
-    client:
-        service-url:
-            defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-    instance:
-        instance-id: springcloud-probider-dept-8001
-        prefer-ip-address: true
-info:
-    app:
-        name: springcloud-provider-dept-8001
-    build:
-        artifactId: '$project.artifactId$'
-        version: '$project.version$ '
-    companny:
-        name: www.atguigu.com
 mybatis:
     config-location: classpath:mybatis/mybatis.cig.xml
     mapper-locations: classpath:mapper/*.xml
@@ -40,11 +25,10 @@ spring:
         url: jdbc:mysql://127.0.0.1:3306/cloudDB02?useUnicode=true&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
         username: root
     profiles: dev
----
 eureka:
     client:
         service-url:
-            defaultZone: http://eureka7001.com:7001,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+            defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
     instance:
         instance-id: springcloud-probider-dept-8001
         prefer-ip-address: true
@@ -56,6 +40,7 @@ info:
         version: '$project.version$ '
     companny:
         name: www.atguigu.com
+---
 mybatis:
     config-location: classpath:mybatis/mybatis.cig.xml
     mapper-locations: classpath:mapper/*.xml
@@ -75,6 +60,21 @@ spring:
                 allow: true
             test-on-borrow: true
         password: 123456
-        url: jdbc:mysql://127.0.0.1:3306/cloudDB03?useUnicode=true&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
+        url: jdbc:mysql://127.0.0.1:3306/cloudDB02?useUnicode=true&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
         username: root
     profiles: test
+eureka:
+    client:
+        service-url:
+            defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+    instance:
+        instance-id: springcloud-probider-dept-8001
+        prefer-ip-address: true
+info:
+    app:
+        name: springcloud-provider-dept-8001
+    build:
+        artifactId: '$project.artifactId$'
+        version: '$project.version$ '
+    companny:
+        name: www.atguigu.com
