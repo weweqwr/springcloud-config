@@ -1,14 +1,14 @@
-spring:
+ï»¿spring:
   profiles:
     active:
     - dev 
 ---
 spring:
-  profiles: dev     #¿ª·¢»·¾³
+  profiles: dev     #å¼€å‘ç¯å¢ƒ
   application: 
     name: springcloud-longer-dev
 ---
 spring: 
-  profiles: test    #²âÊÔ»·¾³
+  profiles: test    #æµ‹è¯•ç¯å¢ƒ
   application:
     name: springcloud-longer-test 
