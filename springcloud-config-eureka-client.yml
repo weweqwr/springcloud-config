@@ -6,6 +6,8 @@ server:
   port: 7001
 spring:
   profiles: dev
+  application:
+    name: springcloud-config-eureka-client
 eureka:
   instance:
     hostname: eureka7001.com
